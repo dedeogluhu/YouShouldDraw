@@ -1,7 +1,5 @@
 # You Should Draw
 
-This project has a long road ahead
-
 Trello board of the project : https://trello.com/b/B5WEdPo3/drawing-app
 
 ## Project setup
@@ -27,4 +25,4 @@ The readme is going to be updated later
 
 ### License : [MIT](https://github.com/dedeogluhu/YouShouldDraw/blob/main/LICENSE)
 
-### ! The project actually has 2 views inside the client folder. Inside the static and views folder was the first try i made with vanilla Javascript. I will probably delete these folders and continue with VueJs
+### The project actually has 2 views inside the client folder. Inside the static and views folder was the first try i made with vanilla Javascript. I will probably delete these folders and continue with VueJs
