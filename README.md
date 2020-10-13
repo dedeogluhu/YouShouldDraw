@@ -25,4 +25,4 @@ Feel free to create issues or create pull requests ( [trello link]( https://trel
 
 The readme is going to be updated later
 
-### License : MIT
+### License : [MIT](https://github.com/dedeogluhu/YouShouldDraw/blob/main/LICENSE)
