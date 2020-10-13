@@ -9,3 +9,8 @@ yarn install
 ```
 yarn serve
 ```
+
+### Runs the vue dev server
+```
+yarn client
+```
