@@ -21,6 +21,6 @@ yarn client
 
 ## Contribution
 
-Feel free to create issues or create pull requests
+Feel free to create issues or create pull requests ( [trello link]( https://trello.com/b/B5WEdPo3/drawing-app) )
 
 The readme is going to be updated later
