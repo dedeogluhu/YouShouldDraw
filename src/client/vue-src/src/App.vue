@@ -22,7 +22,7 @@ export default {
   data() {
     return {
       brushSize: 7,
-      brushColor: "#563D7C", // "#171717",
+      brushColor: "#171717",
     };
   },
   methods: {
