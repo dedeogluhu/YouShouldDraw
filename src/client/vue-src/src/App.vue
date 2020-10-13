@@ -21,7 +21,7 @@ export default {
   },
   data() {
     return {
-      brushSize: 7,
+      brushSize: 3,
       brushColor: "#171717",
     };
   },
