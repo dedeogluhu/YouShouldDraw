@@ -14,6 +14,15 @@
             v-model="brushColor"
             @input="changeBrushColor"
             @keypres.enter.stop.prevent
+            type="color"
+          >
+          </b-form-input>
+          <b-form-input
+            id="dropdown-color-picker"
+            size="sm"
+            v-model="brushColor"
+            @input="changeBrushColor"
+            @keypres.enter.stop.prevent
           >
           </b-form-input>
         </b-input-group>
