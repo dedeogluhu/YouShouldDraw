@@ -1,8 +1,8 @@
 let ideas = {
     ideas: [
-        'House',
-        'Tree',
-        'Car',
+        'a House',
+        'a Tree',
+        'a Car',
         "Hearts",
         "Flowers",
         "Fruit",
