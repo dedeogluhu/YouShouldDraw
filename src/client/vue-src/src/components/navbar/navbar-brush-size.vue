@@ -14,20 +14,21 @@
               v-model="brushSize"
               @input="changeBrushSize"
               class="mb-3"
-              min="0"
+              min="1"
               max="200"
+              variant=""
             >
             </b-form-input>
-            <b-form-input
+            <b-form-spinbutton
               id="dropdown-brush-size"
               size="sm"
               placeholder="Type the size..."
               v-model="brushSize"
-              type="number"
               @input="changeBrushSize"
-              @keypres.enter.stop.prevent
+              min="1"
+              max="500"
             >
-            </b-form-input>
+            </b-form-spinbutton>
           </div>
         </b-input-group>
       </b-form-group>
