@@ -7,7 +7,7 @@ export default {
   name: "myCanvas",
   props: {
     brushColor: String,
-    brushSize: Number,
+    brushSize: String,
   },
   data() {
     return {

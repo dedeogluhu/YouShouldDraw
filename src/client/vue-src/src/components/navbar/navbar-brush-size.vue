@@ -7,16 +7,28 @@
         @submit.stop.prevent
       >
         <b-input-group class="mt-3">
-          <b-form-input
-            id="dropdown-brush-size"
-            size="sm"
-            placeholder="Type the size..."
-            v-model="brushSize"
-            type="number"
-            @input="changeBrushSize"
-            @keypres.enter.stop.prevent
-          >
-          </b-form-input>
+          <div class="container">
+            <b-form-input
+              type="range"
+              size="md"
+              v-model="brushSize"
+              @input="changeBrushSize"
+              class="mb-3"
+              min="0"
+              max="200"
+            >
+            </b-form-input>
+            <b-form-input
+              id="dropdown-brush-size"
+              size="sm"
+              placeholder="Type the size..."
+              v-model="brushSize"
+              type="number"
+              @input="changeBrushSize"
+              @keypres.enter.stop.prevent
+            >
+            </b-form-input>
+          </div>
         </b-input-group>
       </b-form-group>
     </b-dropdown-form>
@@ -28,7 +40,7 @@ export default {
   name: "navbarBrushSize",
   data() {
     return {
-      brushSize: 3,
+      brushSize: "3",
     };
   },
   methods: {
