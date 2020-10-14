@@ -65,7 +65,7 @@ export default {
     this.canvas.addEventListener("mousedown", this.startDrawing);
     this.canvas.addEventListener("mousemove", this.draw);
     this.canvas.addEventListener("mouseup", this.stopDrawing);
-    this.canvas.addEventListener("contextmenu", this.disableRightClick);
+    //this.canvas.addEventListener("contextmenu", this.disableRightClick);
 
     window.addEventListener("resize", this.resizeCanvas);
     //clearButton.addEventListener("click", this.clearCanvas);
