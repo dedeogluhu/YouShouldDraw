@@ -1,7 +1,7 @@
 <template>
   <b-navbar-nav class="ml-auto">
     <b-nav-form>
-      <b-nav-text class="mr-3 text-light"
+      <b-nav-text v-if="suggestion" class="mr-3 text-light"
         >You Should Draw {{ suggestion }}
       </b-nav-text>
       <b-button
