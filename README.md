@@ -18,6 +18,7 @@ yarn serve
 ```
 yarn client
 ```
+### Note : As the vue server and the express server uses the same port you need to adjust the settings or run the express one first and vue server later
 
 ## Contribution
 
