@@ -1,13 +1,5 @@
 <template>
-  <b-navbar-brand
-    href="#"
-    v-b-toggle.sidebar
-    v-b-tooltip.hover
-    title="Click me to open the sidebar"
-  >
-    You Should Draw
-    <b-icon icon="brush"></b-icon>
-
+  <div>
     <b-sidebar
       id="sidebar"
       shadow
@@ -30,6 +22,7 @@
         <b-button block variant="dark"> Help </b-button>
       </div>
     </b-sidebar>
+
     <b-modal id="bg-modal" title="Background Color" hide-footer>
       <h6 class="text-danger">
         <b-icon
@@ -42,7 +35,7 @@
       </h6>
       <b-form-input
         type="color"
-        v-model="backgroundColor"
+        v-model="myBackgroundColor"
         class="mt-3"
       ></b-form-input>
       <p>
@@ -61,19 +54,20 @@
         Ok
       </b-button>
     </b-modal>
-  </b-navbar-brand>
+  </div>
 </template>
 
 <script>
 export default {
+  name: "mySidebar",
   data() {
     return {
-      backgroundColor: "#f8f9fa",
+      myBackgroundColor: "#f8f9fa",
     };
   },
   methods: {
     changeBackgroundColor() {
-      this.$emit("backgroundColorChanged", this.backgroundColor);
+      this.$emit("backgroundColorChanged", this.myBackgroundColor);
       this.$bvModal.hide("bg-modal");
     },
   },
