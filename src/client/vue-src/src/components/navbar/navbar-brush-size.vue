@@ -16,19 +16,18 @@
               class="mb-3"
               min="1"
               max="200"
-              variant=""
             >
             </b-form-input>
-            <b-form-spinbutton
+            <b-form-input
               id="dropdown-brush-size"
               size="sm"
-              placeholder="Type the size..."
               v-model="brushSize"
               @input="changeBrushSize"
               min="1"
               max="500"
+              type="number"
             >
-            </b-form-spinbutton>
+            </b-form-input>
           </div>
         </b-input-group>
       </b-form-group>
