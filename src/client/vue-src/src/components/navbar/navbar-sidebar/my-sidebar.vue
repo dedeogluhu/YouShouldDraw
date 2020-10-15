@@ -19,24 +19,27 @@
         <br />
         <b-button block variant="dark" v-b-modal.about-modal> About </b-button>
         <br />
-        <b-button block variant="dark"> Help </b-button>
+        <b-button block variant="dark" v-b-modal.help-modal> Help </b-button>
       </div>
     </b-sidebar>
 
     <mySidebarBgModal @backgroundColorChanged="sendBackgroundColor($event)" />
     <aboutModal />
+    <helpModal />
   </div>
 </template>
 
 <script>
 import mySidebarBgModal from "./my-sidebar-bg-modal";
 import aboutModal from "./about-modal";
+import helpModal from "./help-modal";
 
 export default {
   name: "mySidebar",
   components: {
     mySidebarBgModal,
     aboutModal,
+    helpModal,
   },
   methods: {
     sendBackgroundColor(event) {
