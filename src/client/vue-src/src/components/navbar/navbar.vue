@@ -45,7 +45,7 @@ export default {
 };
 </script>
 
-<style >
+<style>
 .my-dropdown {
   width: 350px;
 }

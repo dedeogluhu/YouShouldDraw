@@ -1,6 +1,6 @@
 <template>
   <b-nav-item-dropdown text="Color Picker">
-    <b-dropdown-form href="#" class="my-dropdown">
+    <b-dropdown-form class="my-dropdown">
       <b-form-group
         label="Color Picker"
         label-for="dropdown-color-picker"

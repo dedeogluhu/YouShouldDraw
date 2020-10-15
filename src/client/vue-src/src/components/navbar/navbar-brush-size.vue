@@ -1,6 +1,6 @@
 <template>
   <b-nav-item-dropdown text="Brush Size">
-    <b-dropdown-form href="#" class="my-dropdown">
+    <b-dropdown-form class="my-dropdown">
       <b-form-group
         label="Brush Size"
         label-for="dropdown-brush-size"
