@@ -1,14 +1,8 @@
 <template>
   <div>
-    <b-sidebar
-      id="sidebar"
-      shadow
-      bg-variant="dark"
-      text-variant="light"
-      no-header
-    >
+    <b-sidebar id="sidebar" shadow bg-variant="dark" text-variant="light">
       <div class="px-3 py-2">
-        <h3 class="text-light text-center mt-3">
+        <h3 class="text-light text-center">
           You Should Draw
           <b-icon icon="brush"></b-icon>
         </h3>
