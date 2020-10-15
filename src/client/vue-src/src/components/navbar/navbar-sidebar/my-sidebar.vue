@@ -17,57 +17,30 @@
           Background Color
         </b-button>
         <br />
-        <b-button block variant="dark"> About </b-button>
+        <b-button block variant="dark" v-b-modal.about-modal> About </b-button>
         <br />
         <b-button block variant="dark"> Help </b-button>
       </div>
     </b-sidebar>
 
-    <b-modal id="bg-modal" title="Background Color" hide-footer>
-      <h6 class="text-danger">
-        <b-icon
-          icon="exclamation-circle-fill"
-          animation="throb"
-          variant="danger"
-          scale="1.5"
-        ></b-icon>
-        &nbsp; It won't be applied when you download the drawing!
-      </h6>
-      <b-form-input
-        type="color"
-        v-model="myBackgroundColor"
-        class="mt-3"
-      ></b-form-input>
-      <p>
-        <b-icon
-          icon="exclamation-circle-fill"
-          animation="throb"
-          variant="warning"
-          scale="1.5"
-          class="mt-3"
-        ></b-icon>
-        &nbsp; If you wan't it to be applied when you download you can always
-        paint the canvas with the brush
-      </p>
-
-      <b-button class="mt-3" block @click="changeBackgroundColor">
-        Ok
-      </b-button>
-    </b-modal>
+    <mySidebarBgModal @backgroundColorChanged="sendBackgroundColor($event)" />
+    <aboutModal />
   </div>
 </template>
 
 <script>
+import mySidebarBgModal from "./my-sidebar-bg-modal";
+import aboutModal from "./about-modal";
+
 export default {
   name: "mySidebar",
-  data() {
-    return {
-      myBackgroundColor: "#f8f9fa",
-    };
+  components: {
+    mySidebarBgModal,
+    aboutModal,
   },
   methods: {
-    changeBackgroundColor() {
-      this.$emit("backgroundColorChanged", this.myBackgroundColor);
+    sendBackgroundColor(event) {
+      this.$emit("backgroundColorChanged", event);
       this.$bvModal.hide("bg-modal");
     },
   },
