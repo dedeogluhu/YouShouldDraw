@@ -4,8 +4,14 @@
       @clearButtonClicked="sendClearCanvas"
       @brushSizeChanged="sendBrushSize($event)"
       @brushColorChanged="sendBrushColor($event)"
+      @backgroundColorChanged="sendBackgroundColor($event)"
     />
-    <my-canvas ref="myCanvas" :brushSize="brushSize" :brushColor="brushColor" />
+    <my-canvas
+      ref="myCanvas"
+      :brushSize="brushSize"
+      :brushColor="brushColor"
+      :backgroundColor="backgroundColor"
+    />
   </div>
 </template>
 
@@ -23,6 +29,7 @@ export default {
     return {
       brushSize: "3",
       brushColor: "#171717",
+      backgroundColor: "#f8f9fa",
     };
   },
   methods: {
@@ -34,6 +41,9 @@ export default {
     },
     sendBrushSize(event) {
       this.brushSize = event;
+    },
+    sendBackgroundColor(event) {
+      this.$refs.myCanvas.changeBackgroundColor(event);
     },
   },
 };

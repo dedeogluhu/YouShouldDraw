@@ -1,5 +1,5 @@
 <template>
-  <canvas id="canvas" class="bg-light"></canvas>
+  <canvas id="canvas" :style="{ backgroundColor: backgroundColor }"></canvas>
 </template>
 
 <script>
@@ -14,6 +14,7 @@ export default {
       isDrawing: false,
       context: {},
       canvas: {},
+      backgroundColor: "#f8f9fa",
     };
   },
   methods: {
@@ -52,6 +53,10 @@ export default {
     disableRightClick(e) {
       e.preventDefault();
       e.stopPropagation();
+    },
+
+    changeBackgroundColor(e) {
+      this.backgroundColor = e;
     },
   },
   mounted() {

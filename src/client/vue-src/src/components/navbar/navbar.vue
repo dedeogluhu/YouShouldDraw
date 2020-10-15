@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-navbar toggleable="lg" type="dark" variant="dark">
-      <navbarBrand />
+      <navbarBrand @backgroundColorChanged="sendBackgroundColor($event)" />
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -40,6 +40,9 @@ export default {
     },
     sendBrushColor(event) {
       this.$emit("brushColorChanged", event);
+    },
+    sendBackgroundColor(event) {
+      this.$emit("backgroundColorChanged", event);
     },
   },
 };
