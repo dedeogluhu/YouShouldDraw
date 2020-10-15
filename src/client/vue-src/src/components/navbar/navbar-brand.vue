@@ -20,7 +20,7 @@
           You Should Draw <b-icon icon="brush"></b-icon>
         </h3>
         <hr />
-        <b-button block variant="dark"> Background </b-button>
+        <b-button block variant="dark"> Background Color </b-button>
         <br />
         <b-button block variant="dark"> About </b-button>
         <br />
