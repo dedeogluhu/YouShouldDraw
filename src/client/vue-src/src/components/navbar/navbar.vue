@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-navbar toggleable="lg" type="dark" variant="dark">
-      <navbarBrand @backgroundColorChanged="sendBackgroundColor($event)" />
+      <myNavbarBrand @backgroundColorChanged="sendBackgroundColor($event)" />
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -21,15 +21,15 @@
 import navbarRightAligned from "./navbar-right-aligned";
 import navbarColorPicker from "./navbar-color-picker";
 import navbarBrushSize from "./navbar-brush-size";
-import navbarBrand from "./navbar-brand";
+import myNavbarBrand from "./my-navbar-brand";
 
 export default {
-  name: "navbar",
+  name: "myNavbar",
   components: {
     navbarRightAligned,
     navbarColorPicker,
     navbarBrushSize,
-    navbarBrand,
+    myNavbarBrand,
   },
   methods: {
     clearCanvas() {

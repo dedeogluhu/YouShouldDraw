@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <navbar
+    <my-navbar
       @clearButtonClicked="sendClearCanvas"
       @brushSizeChanged="sendBrushSize($event)"
       @brushColorChanged="sendBrushColor($event)"
@@ -16,13 +16,13 @@
 </template>
 
 <script>
-import navbar from "./components/navbar/navbar";
+import myNavbar from "./components/navbar/navbar";
 import myCanvas from "./components/my-canvas";
 
 export default {
   name: "App",
   components: {
-    navbar,
+    myNavbar,
     myCanvas,
   },
   data() {
