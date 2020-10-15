@@ -1,10 +1,7 @@
 <template>
   <div>
     <b-navbar toggleable="lg" type="dark" variant="dark">
-      <b-navbar-brand href="#">
-        You Should Draw
-        <b-icon icon="brush"></b-icon>
-      </b-navbar-brand>
+      <navbarBrand />
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -22,8 +19,9 @@
 
 <script>
 import navbarRightAligned from "./navbar-right-aligned";
-import navbarColorPicker from "./navbar-color-picker.vue";
-import navbarBrushSize from "./navbar-brush-size.vue";
+import navbarColorPicker from "./navbar-color-picker";
+import navbarBrushSize from "./navbar-brush-size";
+import navbarBrand from "./navbar-brand";
 
 export default {
   name: "navbar",
@@ -31,6 +29,7 @@ export default {
     navbarRightAligned,
     navbarColorPicker,
     navbarBrushSize,
+    navbarBrand,
   },
   methods: {
     clearCanvas() {
