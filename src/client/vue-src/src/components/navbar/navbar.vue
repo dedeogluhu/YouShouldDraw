@@ -7,11 +7,11 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <navbar-color-picker @brushColorChanged="sendBrushColor($event)" />
-          <navbar-brush-size @brushSizeChanged="sendBrushSize($event)" />
           <b-nav-item v-b-toggle.sidebar variant="dark">
             Side Panel
           </b-nav-item>
+          <navbar-color-picker @brushColorChanged="sendBrushColor($event)" />
+          <navbar-brush-size @brushSizeChanged="sendBrushSize($event)" />
           <b-nav-item id="#clear-canvas" @click="clearCanvas">
             Clear
           </b-nav-item>
