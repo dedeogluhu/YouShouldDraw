@@ -1,10 +1,5 @@
 <template>
-  <b-navbar-brand
-    href="#"
-    v-b-toggle.sidebar
-    v-b-tooltip.hover
-    title="Click me to open the sidebar"
-  >
+  <b-navbar-brand href="#">
     You Should Draw
     <b-icon icon="brush"></b-icon>
 

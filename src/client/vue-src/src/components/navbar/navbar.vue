@@ -9,7 +9,12 @@
         <b-navbar-nav>
           <navbar-color-picker @brushColorChanged="sendBrushColor($event)" />
           <navbar-brush-size @brushSizeChanged="sendBrushSize($event)" />
-          <b-nav-item id="#clear-canvas" @click="clearCanvas">Clear</b-nav-item>
+          <b-nav-item v-b-toggle.sidebar variant="dark">
+            Side Panel
+          </b-nav-item>
+          <b-nav-item id="#clear-canvas" @click="clearCanvas">
+            Clear
+          </b-nav-item>
         </b-navbar-nav>
         <navbarRightAligned />
       </b-collapse>
