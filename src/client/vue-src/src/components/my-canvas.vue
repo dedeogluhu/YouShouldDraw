@@ -33,8 +33,8 @@ export default {
     draw({ offsetX: x, offsetY: y }) {
       if (!this.isDrawing) return;
 
-      this.context.lineWidth = this.brushSize; //brushSize.value;
-      this.context.strokeStyle = this.brushColor; //colorPicker.value;
+      this.context.lineWidth = this.brushSize;
+      this.context.strokeStyle = this.brushColor;
       this.context.lineCap = "round";
 
       this.context.lineTo(x, y);
