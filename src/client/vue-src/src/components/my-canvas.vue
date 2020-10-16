@@ -1,5 +1,12 @@
 <template>
-  <canvas id="canvas" :style="{ backgroundColor: backgroundColor }"></canvas>
+  <canvas
+    id="canvas"
+    :style="{ backgroundColor: backgroundColor }"
+    @mousedown="startDrawing"
+    @mousemove="draw"
+    @mouseup="stopDrawing"
+  >
+  </canvas>
 </template>
 
 <script>
@@ -63,18 +70,9 @@ export default {
     this.canvas = document.querySelector("#canvas");
     this.context = this.canvas.getContext("2d");
 
-    //const clearButton = document.querySelector("#clear-canvas");
-    //const brushSize = document.querySelector("#brush-size");
-    //const colorPicker = document.querySelector("#color-picker");
-
-    this.canvas.addEventListener("mousedown", this.startDrawing);
-    this.canvas.addEventListener("mousemove", this.draw);
-    this.canvas.addEventListener("mouseup", this.stopDrawing);
     //this.canvas.addEventListener("contextmenu", this.disableRightClick);
 
     window.addEventListener("resize", this.resizeCanvas);
-    //clearButton.addEventListener("click", this.clearCanvas);
-
     this.resizeCanvas();
   },
 };
