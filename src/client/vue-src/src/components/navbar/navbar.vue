@@ -12,6 +12,9 @@
           </b-nav-item>
           <navbar-color-picker @brushColorChanged="sendBrushColor($event)" />
           <navbar-brush-size @brushSizeChanged="sendBrushSize($event)" />
+          <b-nav-item variant="dark" @click="sendBrushColor(backgroundColor)">
+            Eraser
+          </b-nav-item>
           <b-nav-item id="#clear-canvas" @click="clearCanvas">
             Clear
           </b-nav-item>
@@ -30,6 +33,11 @@ import myNavbarBrand from "./my-navbar-brand";
 
 export default {
   name: "myNavbar",
+  data() {
+    return {
+      backgroundColor: "#f8f9fa",
+    };
+  },
   components: {
     navbarRightAligned,
     navbarColorPicker,
@@ -47,6 +55,7 @@ export default {
       this.$emit("brushColorChanged", event);
     },
     sendBackgroundColor(event) {
+      this.backgroundColor = event;
       this.$emit("backgroundColorChanged", event);
     },
   },
