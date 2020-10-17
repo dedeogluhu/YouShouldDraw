@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import mySidebarBgModal from "./my-sidebar-bg-modal";
+import mySidebarBgModal from "./sidebar-bg-modal";
 import aboutModal from "./about-modal";
 import helpModal from "./help-modal";
 
