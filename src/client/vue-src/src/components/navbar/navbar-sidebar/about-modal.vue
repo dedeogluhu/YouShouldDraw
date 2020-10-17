@@ -1,5 +1,5 @@
 <template>
-  <b-modal id="about-modal" title="About" ok-only>
+  <b-modal id="about-modal" title="About" ok-only hide-footer>
     <p class="my-4">
       Hi, I am a web developer who always tries to make and contribute to open
       source projects. When i learned about the canvas api, i tried to make a
@@ -8,6 +8,9 @@
     </p>
     You can find the source here :
     <a href="https://github.com/dedeogluhu/YouShouldDraw">Github</a>
+    <b-button class="mt-3" block @click="$bvModal.hide('about-modal')">
+      Ok
+    </b-button>
   </b-modal>
 </template>
 
