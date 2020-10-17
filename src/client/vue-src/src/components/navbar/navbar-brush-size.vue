@@ -40,7 +40,7 @@ export default {
   name: "navbarBrushSize",
   data() {
     return {
-      brushSize: "3",
+      brushSize: "5",
     };
   },
   methods: {
