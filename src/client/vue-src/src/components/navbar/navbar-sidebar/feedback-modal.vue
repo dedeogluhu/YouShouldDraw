@@ -1,6 +1,6 @@
 <template>
   <b-modal id="feedback-modal" title="Give us feedback" ok-only hide-footer>
-    Report any bugs or make suggestions by openin an issue on
+    Report any bugs or make suggestions by opening an issue on
     <a href="https://github.com/dedeogluhu/YouShouldDraw/issues">Github</a>
     <b-button class="mt-3" block @click="$bvModal.hide('feedback-modal')">
       Ok
