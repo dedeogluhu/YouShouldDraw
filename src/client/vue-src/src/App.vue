@@ -27,9 +27,9 @@ export default {
   },
   data() {
     return {
-      brushSize: "3",
-      brushColor: "#171717",
-      backgroundColor: "#f8f9fa",
+      brushSize: "", //5
+      brushColor: "", //#171717
+      backgroundColor: "", //#f8f9fa
     };
   },
   methods: {
