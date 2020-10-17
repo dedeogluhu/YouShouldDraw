@@ -12,7 +12,11 @@
           </b-nav-item>
           <navbar-color-picker @brushColorChanged="sendBrushColor($event)" />
           <navbar-brush-size @brushSizeChanged="sendBrushSize($event)" />
-          <b-nav-item variant="dark" @click="sendBrushColor(backgroundColor)">
+          <b-nav-item
+            variant="dark"
+            :class="active"
+            @click="sendBrushColorEraser"
+          >
             Eraser
           </b-nav-item>
           <b-nav-item id="#clear-canvas" @click="clearCanvas">
@@ -35,7 +39,10 @@ export default {
   name: "myNavbar",
   data() {
     return {
+      brushColor: "#171717",
       backgroundColor: "#f8f9fa",
+      isEraser: false,
+      active: "",
     };
   },
   components: {
@@ -52,11 +59,23 @@ export default {
       this.$emit("brushSizeChanged", event);
     },
     sendBrushColor(event) {
+      this.brushColor = event;
       this.$emit("brushColorChanged", event);
     },
     sendBackgroundColor(event) {
       this.backgroundColor = event;
       this.$emit("backgroundColorChanged", event);
+    },
+    sendBrushColorEraser() {
+      if (this.isEraser === false) {
+        this.$emit("brushColorChanged", this.backgroundColor);
+        this.isEraser = true;
+        this.active = "active";
+      } else {
+        this.$emit("brushColorChanged", this.brushColor);
+        this.isEraser = false;
+        this.active = "";
+      }
     },
   },
 };
