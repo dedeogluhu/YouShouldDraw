@@ -11,6 +11,16 @@
           Background Color
         </b-button>
 
+        <b-button
+          block
+          variant="dark"
+          class="mt-3"
+          @click="downloadImage('jpg')"
+        >
+          <b-icon icon="download"></b-icon>
+          Download
+        </b-button>
+
         <b-button block variant="dark" class="mt-3" v-b-modal.about-modal>
           About
         </b-button>
@@ -49,6 +59,9 @@ export default {
     sendBackgroundColor(event) {
       this.$emit("backgroundColorChanged", event);
       this.$bvModal.hide("bg-modal");
+    },
+    downloadImage() {
+      this.$emit("onImageDownload");
     },
   },
 };

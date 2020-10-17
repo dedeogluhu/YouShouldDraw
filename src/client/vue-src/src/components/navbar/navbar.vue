@@ -1,7 +1,10 @@
 <template>
   <div>
     <b-navbar toggleable="lg" type="dark" variant="dark">
-      <myNavbarBrand @backgroundColorChanged="sendBackgroundColor($event)" />
+      <myNavbarBrand
+        @backgroundColorChanged="sendBackgroundColor($event)"
+        @onImageDownload="sendImageDownload"
+      />
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -76,6 +79,9 @@ export default {
         this.isEraser = false;
         this.active = "";
       }
+    },
+    sendImageDownload() {
+      this.$emit("onImageDownload");
     },
   },
 };

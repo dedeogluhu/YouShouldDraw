@@ -3,7 +3,10 @@
     You Should Draw
     <b-icon icon="brush"></b-icon>
 
-    <my-sidebar @backgroundColorChanged="sendBackgroundColor($event)" />
+    <my-sidebar
+      @backgroundColorChanged="sendBackgroundColor($event)"
+      @onImageDownload="sendImageDownload"
+    />
   </b-navbar-brand>
 </template>
 
@@ -18,6 +21,9 @@ export default {
   methods: {
     sendBackgroundColor(event) {
       this.$emit("backgroundColorChanged", event);
+    },
+    sendImageDownload() {
+      this.$emit("onImageDownload");
     },
   },
 };

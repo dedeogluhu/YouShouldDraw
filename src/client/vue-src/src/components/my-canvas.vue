@@ -6,6 +6,7 @@
     @mousemove="draw"
     @mouseup="stopDrawing"
   >
+    Your browser doesn't support canvas
   </canvas>
 </template>
 
@@ -25,9 +26,9 @@ export default {
     };
   },
   methods: {
-    startDrawing(e) {
+    startDrawing(event) {
       this.isDrawing = true;
-      this.draw(e);
+      this.draw(event);
     },
 
     draw({ offsetX: x, offsetY: y }) {
@@ -57,13 +58,23 @@ export default {
       this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
     },
 
-    disableRightClick(e) {
-      e.preventDefault();
-      e.stopPropagation();
+    disableRightClick(event) {
+      event.preventDefault();
+      event.stopPropagation();
     },
 
-    changeBackgroundColor(e) {
-      this.backgroundColor = e;
+    changeBackgroundColor(event) {
+      this.backgroundColor = event;
+      // this.context.strokeStyle = event;
+      // this.context.strokeRect(0, 0, this.context.width, this.context.height);
+    },
+
+    downloadImage() {
+      let link = document.createElement("a");
+      link.download = "drawing.png";
+      link.href = this.canvas.toDataURL("image/png", 1.0);
+      link.click();
+      link.remove();
     },
   },
   mounted() {

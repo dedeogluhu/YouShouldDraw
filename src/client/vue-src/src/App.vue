@@ -5,6 +5,7 @@
       @brushSizeChanged="sendBrushSize($event)"
       @brushColorChanged="sendBrushColor($event)"
       @backgroundColorChanged="sendBackgroundColor($event)"
+      @onImageDownload="sendImageDownload"
     />
     <my-canvas
       ref="myCanvas"
@@ -44,6 +45,9 @@ export default {
     },
     sendBackgroundColor(event) {
       this.$refs.myCanvas.changeBackgroundColor(event);
+    },
+    sendImageDownload() {
+      this.$refs.myCanvas.downloadImage();
     },
   },
 };
