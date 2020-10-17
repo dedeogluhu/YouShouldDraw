@@ -69,11 +69,9 @@ export default {
   mounted() {
     this.canvas = document.querySelector("#canvas");
     this.context = this.canvas.getContext("2d");
-
-    //this.canvas.addEventListener("contextmenu", this.disableRightClick);
-
-    window.addEventListener("resize", this.resizeCanvas);
     this.resizeCanvas();
+    //this.canvas.addEventListener("contextmenu", this.disableRightClick);
+    //window.addEventListener("resize", this.resizeCanvas);
   },
 };
 </script>
