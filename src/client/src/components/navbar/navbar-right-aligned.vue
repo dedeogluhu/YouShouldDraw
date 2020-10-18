@@ -25,10 +25,12 @@ export default {
   },
   methods: {
     getIdeas() {
-      fetch("http://localhost:8080/api/ideas")
+      fetch("api/ideas")
         .then((response) => response.json())
         .then((response) => this.getRandomSuggestion(response.ideas))
-        .catch(console.log("We couldn't reach to our server..."));
+        .catch((error) =>
+          console.log("We couldn't reach to our server...", error)
+        );
     },
     getRandomSuggestion(array) {
       let idea = array[Math.floor(Math.random() * array.length)];
