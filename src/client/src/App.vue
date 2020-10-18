@@ -18,7 +18,7 @@
 
 <script>
 import myNavbar from "./components/navbar/navbar";
-import myCanvas from "./components/my-canvas";
+import myCanvas from "./components/canvas";
 
 export default {
   name: "App",

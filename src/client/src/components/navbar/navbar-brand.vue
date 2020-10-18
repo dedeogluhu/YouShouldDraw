@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import mySidebar from "./navbar-sidebar/my-sidebar";
+import mySidebar from "./navbar-sidebar/sidebar";
 
 export default {
   name: "myNavbarBrand",

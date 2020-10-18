@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="dark" variant="dark">
+    <b-navbar toggleable="lg" type="dark" variant="dark" id="my-navbar">
       <myNavbarBrand
         @backgroundColorChanged="sendBackgroundColor($event)"
         @onImageDownload="sendImageDownload"
@@ -44,7 +44,7 @@
 import navbarRightAligned from "./navbar-right-aligned";
 import navbarColorPicker from "./navbar-color-picker";
 import navbarBrushSize from "./navbar-brush-size";
-import myNavbarBrand from "./my-navbar-brand";
+import myNavbarBrand from "./navbar-brand";
 
 export default {
   name: "myNavbar",
