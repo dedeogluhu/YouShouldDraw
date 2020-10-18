@@ -16,12 +16,12 @@ yarn install
 yarn serve
 ```
 
-### Runs the vue dev server
+### Runs the Vue dev server
 ```
 yarn client
 ```
 
-### Builds the vue frontend
+### Builds the Vue frontend
 ```
 yarn build
 ```
