@@ -11,6 +11,11 @@ Trello board of the project : https://trello.com/b/B5WEdPo3/drawing-app
 yarn install
 ```
 
+### Builds the Vue frontend
+```
+yarn build
+```
+
 ### Runs the Expressjs server
 ```
 yarn serve
@@ -19,11 +24,6 @@ yarn serve
 ### Runs the Vue dev server
 ```
 yarn client
-```
-
-### Builds the Vue frontend
-```
-yarn build
 ```
 
 ### Note : As the vue server and the express server uses the same port you need to adjust the settings or run the express one first and vue server later
