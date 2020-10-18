@@ -26,8 +26,9 @@ export default {
   methods: {
     getIdeas() {
       fetch("http://localhost:8080/api/ideas")
-        .then((res) => res.json())
-        .then((res) => this.getRandomSuggestion(res.ideas));
+        .then((response) => response.json())
+        .then((response) => this.getRandomSuggestion(response.ideas))
+        .catch((error) => console.log(error));
     },
     getRandomSuggestion(array) {
       let idea = array[Math.floor(Math.random() * array.length)];
