@@ -5,10 +5,10 @@ const ideas = require('./drawingIdeas');
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-app.use(express.static(path.resolve(`${__dirname}/../client/static/`)));
+app.use(express.static(path.resolve(`${__dirname}/public/`)));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.resolve(`${__dirname}/../client/views/index.html`));
+    res.sendFile(path.resolve(`${__dirname}/public/index.html`));
 });
 
 app.get('/api/ideas', (req, res) => {
