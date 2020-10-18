@@ -6,7 +6,8 @@
     @mousemove="draw"
     @mouseup="stopDrawing"
   >
-    Your browser doesn't support canvas
+    Your browser doesn't support the canvas element. You may want to upgrade to
+    a new browser.
   </canvas>
 </template>
 
