@@ -25,6 +25,14 @@
           <b-nav-item id="#clear-canvas" @click="clearCanvas">
             Clear
           </b-nav-item>
+          <!--b-button variant="dark">
+            <b-icon icon="arrow-counterclockwise" class="text-light">
+              Undo
+            </b-icon>
+          </b-button>
+          <b-button variant="dark">
+            <b-icon icon="arrow-clockwise" class="text-light"> Redo </b-icon>
+          </b-button-->
         </b-navbar-nav>
         <navbarRightAligned />
       </b-collapse>
