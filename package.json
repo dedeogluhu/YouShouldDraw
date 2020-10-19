@@ -6,9 +6,8 @@
   "scripts": {
     "serve": "node ./src/server/index.js",
     "dev": "nodemon ./src/server/index.js",
-    "client": "cd ./src/client/ && yarn serve",
-    "build": "cd ./src/client/ && yarn build",
-    "prepare": "yarn install && cd ./src/client/ && yarn install"
+    "client": "cd ./src/client/ && vue-cli-service serve",
+    "build": "cd ./src/client/ && vue-cli-service build"
   },
   "author": "dedeogluhu",
   "license": "MIT",

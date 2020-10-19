@@ -21,7 +21,7 @@ Nodejs and npm or yarn package manager
 
 ### Project setup
 ```
-yarn prepare
+yarn install
 ```
 
 ### Builds the Vue frontend
