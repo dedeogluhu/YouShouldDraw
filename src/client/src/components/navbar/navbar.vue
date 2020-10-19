@@ -8,7 +8,7 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
           <b-nav-item v-b-toggle.sidebar variant="dark">
-            <b-icon icon="gear-fill"></b-icon>
+            <b-icon icon="gear"></b-icon>
             Side Panel
           </b-nav-item>
 
@@ -33,7 +33,7 @@
           </b-nav-item>
 
           <b-nav-item id="#clear-canvas" @click="clearCanvas">
-            <b-icon icon="x-circle-fill"></b-icon>
+            <b-icon icon="x-circle"></b-icon>
             Clear
           </b-nav-item>
           <!--b-button variant="dark">
