@@ -45,6 +45,8 @@ yarn client
 
 Feel free to create issues or create pull requests. Any help is much appreciated. You could start by looking at the [trello page](https://trello.com/b/B5WEdPo3/drawing-app)
 
+I would love to get a feedback from a UI/UX designer.
+
 # License : [MIT](https://github.com/dedeogluhu/YouShouldDraw/blob/main/LICENSE)
 ```
 MIT License
