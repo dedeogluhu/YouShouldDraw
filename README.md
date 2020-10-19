@@ -7,7 +7,7 @@ Trello board of the project : https://trello.com/b/B5WEdPo3/drawing-app
 ### Screenshot from the first versions of the app
 ![Screenshot](https://user-images.githubusercontent.com/64230499/95909309-ebfeab00-0da6-11eb-9dc7-99e9e3100480.png)
 
-### Screenshot from the newer versions 
+### Kinda new version
 ![Second-Screenshot](https://user-images.githubusercontent.com/64230499/96458334-79b81b80-1229-11eb-918b-404740c91c28.png)
 
 
