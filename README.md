@@ -13,7 +13,6 @@ Trello board of the project : https://trello.com/b/B5WEdPo3/drawing-app
 ### Requirements
 ```
 Nodejs and npm or yarn package manager
-
 ```
 
 ### Project setup
