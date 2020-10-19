@@ -1,19 +1,14 @@
 <template>
   <b-nav-item-dropdown text="Color Picker">
     <b-dropdown-form class="my-dropdown">
-      <b-form-group
-        label="Color Picker"
-        label-for="dropdown-color-picker"
-        @submit.stop.prevent
-      >
+      <b-form-group @submit.stop.prevent>
         <b-input-group class="mt-3">
           <b-form-input
             id="dropdown-color-picker"
             size="sm"
-            placeholder="Type a hex code or a rgba value..."
             v-model="brushColor"
             @input="changeBrushColor"
-            @keypres.enter.stop.prevent
+            @keypress.enter.stop.prevent
             type="color"
           >
           </b-form-input>
@@ -22,7 +17,7 @@
             size="sm"
             v-model="brushColor"
             @input="changeBrushColor"
-            @keypres.enter.stop.prevent
+            @keypress.enter.stop.prevent
           >
           </b-form-input>
         </b-input-group>

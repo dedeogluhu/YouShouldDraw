@@ -1,11 +1,7 @@
 <template>
   <b-nav-item-dropdown text="Brush Size">
     <b-dropdown-form class="my-dropdown">
-      <b-form-group
-        label="Brush Size"
-        label-for="dropdown-brush-size"
-        @submit.stop.prevent
-      >
+      <b-form-group @submit.stop.prevent>
         <b-input-group class="mt-3">
           <div class="container">
             <b-form-input
@@ -26,6 +22,7 @@
               min="1"
               max="500"
               type="number"
+              @keypress.enter.stop.prevent
             >
             </b-form-input>
           </div>
