@@ -44,6 +44,9 @@ export default {
       this.$emit("brushColorChanged", this.brushColor);
     },
   },
+  mounted() {
+    this.changeBrushColor();
+  },
 };
 </script>
 

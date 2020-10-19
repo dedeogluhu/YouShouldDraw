@@ -48,6 +48,9 @@ export default {
       this.$emit("brushSizeChanged", this.brushSize);
     },
   },
+  mounted() {
+    this.changeBrushSize();
+  },
 };
 </script>
 
