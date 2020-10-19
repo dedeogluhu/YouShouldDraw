@@ -24,7 +24,7 @@
       </div>
     </b-sidebar>
 
-    <mySidebarBgModal @backgroundColorChanged="sendBackgroundColor($event)" />
+    <myBgModal @backgroundColorChanged="sendBackgroundColor($event)" />
     <aboutModal />
     <helpModal />
     <feedbackModal />
@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import mySidebarBgModal from "./sidebar-bg-modal";
+import myBgModal from "./bg-modal";
 import aboutModal from "./about-modal";
 import helpModal from "./help-modal";
 import feedbackModal from "./feedback-modal";
@@ -40,7 +40,7 @@ import feedbackModal from "./feedback-modal";
 export default {
   name: "mySidebar",
   components: {
-    mySidebarBgModal,
+    myBgModal,
     aboutModal,
     helpModal,
     feedbackModal,

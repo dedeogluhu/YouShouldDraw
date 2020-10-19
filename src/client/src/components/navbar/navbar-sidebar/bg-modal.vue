@@ -32,7 +32,7 @@
 
 <script>
 export default {
-  name: "mySidebarBgModal",
+  name: "myBgModal",
   data() {
     return {
       myBackgroundColor: "#f8f9fa",
