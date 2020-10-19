@@ -29,12 +29,12 @@ yarn install
 yarn build
 ```
 
-### Runs the Expressjs server
+### Runs the Expressjs server after you build the frontend
 ```
 yarn serve
 ```
 
-### Runs the Vue dev server
+### Runs the Vue dev server if you don't want to work with the backend service
 ```
 yarn client
 ```
