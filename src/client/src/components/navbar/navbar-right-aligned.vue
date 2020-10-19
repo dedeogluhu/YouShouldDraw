@@ -37,9 +37,6 @@ export default {
       this.suggestion = idea;
     },
   },
-  mounted() {
-    this.getIdeas();
-  },
 };
 </script>
 
