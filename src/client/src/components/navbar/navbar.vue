@@ -1,28 +1,39 @@
 <template>
   <div>
     <b-navbar toggleable="lg" type="dark" variant="dark" id="my-navbar">
-      <myNavbarBrand
-        @backgroundColorChanged="sendBackgroundColor($event)"
-        @onImageDownload="sendImageDownload"
-      />
+      <myNavbarBrand @backgroundColorChanged="sendBackgroundColor($event)" />
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
           <b-nav-item v-b-toggle.sidebar variant="dark">
+            <b-icon icon="gear-fill"></b-icon>
             Side Panel
           </b-nav-item>
+
+          <b-nav-item block variant="dark" @click="downloadImage('jpg')">
+            <b-icon icon="download"></b-icon>
+            Download
+          </b-nav-item>
+
           <navbar-color-picker @brushColorChanged="sendBrushColor($event)" />
+
           <navbar-brush-size @brushSizeChanged="sendBrushSize($event)" />
+
           <b-nav-item
             variant="dark"
             :class="active"
             @click="sendBrushColorEraser"
           >
+            <b-icon icon="droplet" v-if="!active"></b-icon>
+            <b-icon icon="droplet-fill" v-else></b-icon>
+
             Eraser
           </b-nav-item>
+
           <b-nav-item id="#clear-canvas" @click="clearCanvas">
+            <b-icon icon="x-circle-fill"></b-icon>
             Clear
           </b-nav-item>
           <!--b-button variant="dark">
@@ -88,7 +99,7 @@ export default {
         this.active = "";
       }
     },
-    sendImageDownload() {
+    downloadImage() {
       this.$emit("onImageDownload");
     },
   },
