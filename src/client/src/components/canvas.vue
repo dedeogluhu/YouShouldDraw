@@ -66,8 +66,6 @@ export default {
 
     changeBackgroundColor(event) {
       this.backgroundColor = event;
-      // this.context.strokeStyle = event;
-      // this.context.strokeRect(0, 0, this.context.width, this.context.height);
     },
 
     downloadImage() {
