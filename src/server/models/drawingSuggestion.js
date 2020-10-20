@@ -1,4 +1,4 @@
-let ideas = {
+module.exports = {
     ideas: [
         'a House',
         'a Tree',
@@ -46,4 +46,3 @@ let ideas = {
     ]
 };
 
-module.exports = ideas;
