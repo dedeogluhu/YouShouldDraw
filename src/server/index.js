@@ -1,10 +1,13 @@
 const express = require('express');
 const path = require('path');
-const ideas = require('./drawingIdeas');
+const ideas = require('./models/drawingSuggestion');
+const config = require('./config');
+const cors = require('cors');
 
 const app = express();
-const PORT = process.env.PORT || 8080;
+const PORT = config.PORT;
 
+app.use(cors());
 app.use(express.static(path.resolve(`${__dirname}/public/`)));
 
 app.get('/', (req, res) => {
