@@ -80,7 +80,7 @@ export default {
     this.canvas = document.querySelector("#canvas");
     this.context = this.canvas.getContext("2d");
     this.resizeCanvas();
-    //this.canvas.addEventListener("contextmenu", this.disableRightClick);
+    this.canvas.addEventListener("contextmenu", this.disableRightClick);
     //window.addEventListener("resize", this.resizeCanvas);
   },
 };
