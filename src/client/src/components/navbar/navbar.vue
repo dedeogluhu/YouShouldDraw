@@ -17,7 +17,12 @@
             Download
           </b-nav-item>
 
-          <navbar-color-picker @brushColorChanged="sendBrushColor($event)" />
+          <navbar-color-picker
+            v-if="!active"
+            @brushColorChanged="sendBrushColor($event)"
+          />
+          <b-nav-item-dropdown v-else text="Color Picker" disabled>
+          </b-nav-item-dropdown>
 
           <navbar-brush-size @brushSizeChanged="sendBrushSize($event)" />
 
