@@ -27,7 +27,13 @@
             v-if="!active"
             @brushColorChanged="sendBrushColor($event)"
           />
-          <b-nav-item-dropdown v-else text="Color Picker" disabled>
+          <b-nav-item-dropdown
+            v-else
+            text="Color Picker"
+            disabled
+            v-b-tooltip.hover
+            title="You need to disable the eraser to change brush color"
+          >
           </b-nav-item-dropdown>
 
           <navbar-brush-size @brushSizeChanged="sendBrushSize($event)" />
