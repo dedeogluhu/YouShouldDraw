@@ -12,7 +12,13 @@
             Side Panel
           </b-nav-item>
 
-          <b-nav-item block variant="dark" @click="downloadImage('jpg')">
+          <b-nav-item
+            block
+            variant="dark"
+            @click="downloadImage"
+            v-b-tooltip.hover
+            title="Download as PNG"
+          >
             <b-icon icon="download"></b-icon>
             Download
           </b-nav-item>
