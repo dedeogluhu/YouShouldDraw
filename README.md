@@ -21,22 +21,22 @@ Nodejs and npm or yarn package manager
 
 ### Project setup
 ```
-yarn install
+yarn install  (npm install)
 ```
 
 ### Creates the production build for Vue frontend
 ```
-yarn build
+yarn build  (npm run build)
 ```
 
 ### Runs the Expressjs server (should fully work after you build the frontend)
 ```
-yarn serve
+yarn serve  (npm run serve)
 ```
 
 ### Runs the Vue development server 
 ```
-yarn client
+yarn client  (npm run client)
 ```
 
 # Contribution
