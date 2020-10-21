@@ -41,7 +41,7 @@ yarn client
 
 # Contribution
 
-Feel free to create issues or create pull requests. Any help is much appreciated.
+Feel free to open issues or create pull requests. Any help is much appreciated.
 
 You could start by looking at the [trello page](https://trello.com/b/B5WEdPo3/drawing-app)
 
