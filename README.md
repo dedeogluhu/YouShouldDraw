@@ -39,8 +39,6 @@ yarn serve
 yarn client
 ```
 
-### Note : As the vue server and the express server uses the same port you need to adjust the settings or run the express one first and vue server later.
-
 # Contribution
 
 Feel free to create issues or create pull requests. Any help is much appreciated. You could start by looking at the [trello page](https://trello.com/b/B5WEdPo3/drawing-app)
