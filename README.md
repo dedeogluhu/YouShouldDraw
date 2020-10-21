@@ -24,26 +24,26 @@ Nodejs and npm or yarn package manager
 yarn install
 ```
 
-### Builds the Vue frontend
+### Creates the production build for Vue frontend
 ```
 yarn build
 ```
 
-### Runs the Expressjs server after you build the frontend
+### Runs the Expressjs server (should fully work after you build the frontend)
 ```
 yarn serve
 ```
 
-### Runs the Vue dev server if you don't want to work with the backend service
+### Runs the Vue development server 
 ```
 yarn client
 ```
 
 # Contribution
 
-Feel free to create issues or create pull requests. Any help is much appreciated. You could start by looking at the [trello page](https://trello.com/b/B5WEdPo3/drawing-app)
+Feel free to create issues or create pull requests. Any help is much appreciated.
 
-I would love to get a feedback from a UI/UX designer.
+You could start by looking at the [trello page](https://trello.com/b/B5WEdPo3/drawing-app)
 
 # License : [MIT](https://github.com/dedeogluhu/YouShouldDraw/blob/main/LICENSE)
 ```
