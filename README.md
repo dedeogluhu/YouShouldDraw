@@ -1,6 +1,6 @@
 # You Should Draw
 
-This is a drawing app that uses [Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
+This is a drawing app that uses [the Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
 
 Trello board of the project : https://trello.com/b/B5WEdPo3/drawing-app
 
