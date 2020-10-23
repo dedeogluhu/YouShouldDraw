@@ -33,11 +33,10 @@ yarn build  (npm run build)
 yarn serve  (npm run serve)
 ```
 
-### We also have nodemon as dev dependency
+### We also have nodemon as a dev dependency
 ```
 yarn dev  (npm run dev)
 ```
-
 
 ### Runs the Vue development server 
 ```
