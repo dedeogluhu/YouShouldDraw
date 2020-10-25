@@ -1,8 +1,8 @@
 # You Should Draw
 
-This is a drawing app that uses [the Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
+This is a drawing app that uses **[the Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)**
 
-Trello board of the project : https://trello.com/b/B5WEdPo3/drawing-app
+Trello board of the project : **https://trello.com/b/B5WEdPo3/drawing-app**
 
 ### Screenshots from the app
 ![Screenshot](https://user-images.githubusercontent.com/64230499/95909309-ebfeab00-0da6-11eb-9dc7-99e9e3100480.png)
@@ -47,7 +47,7 @@ yarn client  (npm run client)
 
 Feel free to open issues or create pull requests. Any help is much appreciated.
 
-You could start by looking at the [trello page](https://trello.com/b/B5WEdPo3/drawing-app)
+You could start by looking at the **[trello page](https://trello.com/b/B5WEdPo3/drawing-app)**
 
 # License : [MIT](https://github.com/dedeogluhu/YouShouldDraw/blob/main/LICENSE)
 ```
