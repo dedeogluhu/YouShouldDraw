@@ -4,7 +4,7 @@
   "description": "Simple Drawing App",
   "main": "src/server/index.js",
   "scripts": {
-    "serve": "node ./src/server/index.js",
+    "start": "node ./src/server/index.js",
     "dev": "nodemon ./src/server/index.js",
     "client": "cd ./src/client/ && vue-cli-service serve",
     "build": "cd ./src/client/ && vue-cli-service build"

@@ -30,10 +30,10 @@ yarn build  (npm run build)
 
 ### Runs the Expressjs server (should fully work after you build the frontend)
 ```
-yarn serve  (npm run serve)
+yarn start  (npm run start)
 ```
 
-### We also have nodemon as a dev dependency
+### We also have nodemon as a devDependency
 ```
 yarn dev  (npm run dev)
 ```
