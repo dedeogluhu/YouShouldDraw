@@ -43,6 +43,11 @@ yarn dev  (npm run dev)
 yarn client  (npm run client)
 ```
 
+### You can see the api here which only has a simple array of drawing ideas for now
+```
+http://localhost:{PORT}/api/ideas
+```
+
 # Contribution
 
 Feel free to open issues or create pull requests. Any help is much appreciated.
