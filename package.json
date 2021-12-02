@@ -14,7 +14,6 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
     "dotenv": "^10.0.0",
     "eslint": "^7.27.0",
@@ -23,6 +22,7 @@
     "vue-template-compiler": "^2.6.11"
   },
   "dependencies": {
+    "@vue/cli-service": "~4.5.0",
     "bootstrap": "^5.0.1",
     "bootstrap-vue": "^2.17.3",
     "core-js": "^3.6.5",
